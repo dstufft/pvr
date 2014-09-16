@@ -1,0 +1,12 @@
+include CHANGELOG.rst CONTRIBUTING.rst LICENSE README.rst
+
+include .coveragerc
+include tox.ini
+
+recursive-include docs *
+recursive-include tests *.py
+
+exclude .travis.yml
+exclude dev-requirements.txt
+
+prune docs/_build
